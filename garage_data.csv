@@ -1,0 +1,5 @@
+VehicleID,Make,Model,Year,Owner,ServiceDate,ServiceType,Cost
+1,Toyota,Corolla,2015,John Doe,2024-12-01,Oil Change,50
+2,Ford,F-150,2018,Jane Smith,2024-11-20,Tire Rotation,40
+3,Honda,Civic,2020,Mike Brown,2024-10-15,Battery Replacement,150
+4,Chevrolet,Malibu,2017,Susan Lee,2024-12-10,Brake Pads,200

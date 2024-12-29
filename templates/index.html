@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garage Crud Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div id="header">
+        <h1>Garage Crud Page</h1>
+    </div>
+    <div id="addInput">
+        <h3>Add car to list</h3>
+        {% for key in data[0].keys() %}
+        {% if key != "VehicleID" %}
+        <span>{{ key | split_camel_case }}</span>
+        <input type="text" id="input{{ key }}">
+        <br>
+        {% endif %}
+        {% endfor %}
+        <button onclick="add()">Add Car</button>
+    </div>
+    <div id="dataTable">
+        <table border="1">
+            <thead>
+                <tr>
+                    {% for key in data[0].keys() %}
+                    {% if key != "VehicleID" %}
+                    <th data-key="{{ key }}">{{ key | split_camel_case }}</th>
+                    {% endif %}
+                    {% endfor %}
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be populated dynamically -->
+            </tbody>            
+        </table>
+    </div>
+
+    <!-- Include your external JavaScript file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>

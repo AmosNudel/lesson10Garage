@@ -1,0 +1,83 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+#header h1 {
+    text-align: center;
+    color: #333;
+}
+
+#addInput {
+    margin-bottom: 20px;
+}
+
+#addInput h3 {
+    color: #666;
+}
+
+#addInput span {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+}
+
+#addInput input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: calc(100% - 110px);
+}
+
+#addInput button {
+    padding: 10px 15px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#addInput button:hover {
+    background-color: #4cae4c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td button {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+td button:hover {
+    background-color: #c9302c;
+}
+
+.updateBtn {
+    padding: 5px 10px;
+    background-color: #4f84d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.updateBtn:hover {
+    background-color: #3a609e;
+}
